@@ -14,12 +14,6 @@
       - flask
 
   tasks:
-    - name: "Update os packages"
-      yum:
-        name: '*'
-        state: latest
-      become: yes
-
     - name: "Install os packages"
       yum:
         name: "{{ item }}"
@@ -38,8 +32,11 @@
         line: "export APP_BUCKET_NAME={{ bucket_name }}"
 
     - raw: git config --global user.name "pisxx"
+
     - raw: git config --global user.email "piotrek.slawek@gmail.com"
-    - pip:
+
+    - name: Install python packages
+      pip:
         name: "{{ item }}"
         executable: pip-3.6
       with_items: "{{ python_dependencies }}"
