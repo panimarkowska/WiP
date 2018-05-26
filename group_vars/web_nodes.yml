@@ -1,15 +1,15 @@
 ---
 git:
-  user: "pisxx"
-  email: "piotrek.slawek@gmail.com"
-repository_url: https://github.com/pisxx/ani-creator.git
+  user: "panimarkowska"
+  email: "panimark@fsdf.pl"
+repository_url: https://github.com/panimarkowska/WiP_AniCreator.git
 os_packages:
   - python36
   - python36-pip
   - git
   - tree
   - mc
-bucket_name: "pisxx"
+bucket_name: "181003-p.markowska"
 python_dependencies:
   - boto3
   - pytest
