@@ -1,0 +1,17 @@
+---
+git:
+  user: "pisxx"
+  email: "piotrek.slawek@gmail.com"
+repository_url: https://github.com/pisxx/ani-creator.git
+os_packages:
+  - python36
+  - python36-pip
+  - git
+  - tree
+  - mc
+bucket_name: "pisxx"
+python_dependencies:
+  - boto3
+  - pytest
+  - flask
+app_root_dir: "~/ani-creator"
